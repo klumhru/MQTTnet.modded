@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MQTTnet.Serializer;
 
@@ -76,11 +77,12 @@ namespace MQTTnet.Client
             return this;
         }
 
-        public MqttClientOptionsBuilder WithWebSocketServer(string uri)
+        public MqttClientOptionsBuilder WithWebSocketServer(string uri, IDictionary<string, string> headers = null)
         {
             _webSocketOptions = new MqttClientWebSocketOptions
             {
-                Uri = uri
+                Uri = uri,
+                RequestHeaders = headers,
             };
 
             return this;
