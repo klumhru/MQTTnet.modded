@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.3;netstandard2.0;net452;net461;uap10.0</TargetFrameworks>
     <AssemblyName>MQTTnet</AssemblyName>
     <RootNamespace>MQTTnet</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -11,7 +10,7 @@
     <PackageId />
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='uap10.0'">
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>

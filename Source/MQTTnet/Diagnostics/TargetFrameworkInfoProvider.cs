@@ -10,6 +10,8 @@
                 return "net452";
 #elif NET461
                 return "net461";
+#elif NET471
+                return "net471";
 #elif NET472
                 return "net472";
 #elif NETSTANDARD1_3
